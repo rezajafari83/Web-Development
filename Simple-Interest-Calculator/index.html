@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Web App – Simple Interest Calculator</title>
+    
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body data-new-gr-c-s-check-loaded="14.1056.0" data-gr-ext-installed=""><div class="maindiv">
+
+        <h1>Simple Interest Calculator</h1>
+            Amount <input type="number" id="principal" onchange="checkAmount()">  
+            <br>
+            Rate <input type="range" id="rate" min="1" max="20" step="o.25" value="10.25" onchange="updateRate(this.value)">  
+
+                 <span id="rate_val">8</span>
+
+                <br>
+            No. of Years <select name="No. of Years" id="years"> 
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>  
+                <option value="10">10</option>        
+            </select> <br>
+
+            <button onclick="compute()">Compute Interest</button>
+            <span></span>
+
+            <p id="result">If you deposit <mark>5</mark>, <br> at an interest rate of <mark>8%.</mark><br> You will receive an amount of <mark>1.2</mark>,<br>in the year <mark>2025.</mark><br></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer>
+        © This Calculator belongs to Reza Jafari
+    </footer>
+
+
+</body>
+</html>
